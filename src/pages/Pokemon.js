@@ -175,7 +175,7 @@ const Pokemon = () => {
                   </CardContent>
                 </Card>
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} sm={12} lg={6}>
                 <AppCurrentSubject pokemon={pokemon} />
               </Grid>
               <Grid item xs={12} sm={12} lg={6}>

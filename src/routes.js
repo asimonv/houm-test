@@ -23,7 +23,7 @@ export default function Router() {
       path: '/',
       element: <LogoOnlyLayout />,
       children: [
-        { path: '/', element: <Navigate to="/pokemon" /> },
+        { path: '/houm-test', element: <Navigate to="/pokemon" /> },
         { path: '404', element: <NotFound /> },
         { path: '*', element: <Navigate to="/404" /> }
       ]

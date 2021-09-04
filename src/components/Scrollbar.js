@@ -41,7 +41,9 @@ Scrollbar.propTypes = {
 };
 
 export default function Scrollbar({ children, sx, ...other }) {
-  const isMobile = navigator.userAgentData.mobile;
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
 
   if (isMobile) {
     return (

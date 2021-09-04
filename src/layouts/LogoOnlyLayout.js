@@ -24,7 +24,7 @@ export default function LogoOnlyLayout() {
   return (
     <>
       <HeaderStyle>
-        <RouterLink to="/">
+        <RouterLink to="/houm-test">
           <Logo />
         </RouterLink>
       </HeaderStyle>

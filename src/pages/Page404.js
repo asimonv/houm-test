@@ -38,7 +38,7 @@ export default function Page404() {
             <motion.div variants={varBounceIn}>
               <Box
                 component="img"
-                src="/static/illustrations/illustration_404.svg"
+                src="/houm-test/static/illustrations/illustration_404.svg"
                 sx={{ height: 260, mx: 'auto', my: { xs: 5, sm: 10 } }}
               />
             </motion.div>

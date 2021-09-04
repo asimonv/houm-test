@@ -1,7 +1,8 @@
 {
-  "name": "houm",
+  "name": "poke-houm",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "http://asimonv.github.io/houm-test",
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
@@ -37,7 +38,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
