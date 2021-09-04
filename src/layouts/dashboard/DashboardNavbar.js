@@ -1,8 +1,12 @@
-import { AppBar, Box, Toolbar } from '@material-ui/core';
+import { AppBar, Box, Toolbar, IconButton } from '@material-ui/core';
+import { Icon } from '@iconify/react';
+
 // material
 import { alpha, styled } from '@material-ui/core/styles';
+import menu2Fill from '@iconify/icons-eva/menu-2-fill';
 import PropTypes from 'prop-types';
 // components
+import { MHidden } from '../../components/@material-extend';
 import Searchbar from './Searchbar';
 
 // ----------------------------------------------------------------------
@@ -40,6 +44,11 @@ export default function DashboardNavbar({ onOpenSidebar, onPressSearch }) {
   return (
     <RootStyle>
       <ToolbarStyle>
+        <MHidden width="lgUp">
+          <IconButton onClick={onOpenSidebar} sx={{ mr: 1, color: 'text.primary' }}>
+            <Icon icon={menu2Fill} />
+          </IconButton>
+        </MHidden>
         <Searchbar onPressSearch={onPressSearch} />
         <Box sx={{ flexGrow: 1 }} />
       </ToolbarStyle>
